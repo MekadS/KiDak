@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string
+        name="digraph_nWithTilde">ñ</string>
+    <string
+        name="digraph_iWithDiaresis">ï</string>
+    <string
+        name="digraph_eng">ng</string>
+
+    <!--<string name="digraph_nWithTilde">\u00f1</string>-->
+</resources>

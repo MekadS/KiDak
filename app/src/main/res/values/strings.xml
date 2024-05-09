@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KiDak11</string>
+    <string name="service_label">KhasiSpellChecker</string>
+    <string name="subtype_generic">KiDakGeneric</string>
+</resources>

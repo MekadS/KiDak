@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+* Copyright (C) 2008-2009 The Android Open Source Project
+* Copyright (C) 2021 Medonlakador Syiem
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:latin="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:keyWidth="10%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    android:keyHeight="@dimen/key_height">
+
+    <!--    Ng E R T Y U I O P      -->
+    <!--    Ng W E R T Y U I O      -->
+    <!--    Ng W E R T Y U I O P    -->
+    <Row>
+        <Key android:codes="-250" android:keyOutputText="@string/digraph_eng" android:keyLabel="ng" android:keyEdgeFlags="left"/>
+<!--        <Key android:keyOutputText="@string/digraph_eng" android:keyLabel="ng" android:keyEdgeFlags="left"/>-->
+        <Key android:codes="119" android:keyLabel="w"/>
+        <Key android:codes="101" android:keyLabel="e"/>
+        <Key android:codes="114" android:keyLabel="r"/>
+        <Key android:codes="116" android:keyLabel="t"/>
+        <Key android:codes="121" android:keyLabel="y"/>
+        <Key android:codes="117" android:keyLabel="u"/>
+        <Key android:codes="105" android:keyLabel="i"/>
+        <Key android:codes="111" android:keyLabel="o"/>
+        <Key android:codes="112" android:keyLabel="p" android:keyEdgeFlags="right"/>
+    </Row>
+    <!--       A S D G H J K L      -->
+    <!--       A S D G H J K P      -->
+    <!--       A S D G H J K L      -->
+    <Row>
+        <Key android:codes="97" android:keyLabel="a" android:horizontalGap="10%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="115" android:keyLabel="s"/>
+        <Key android:codes="100" android:keyLabel="d"/>
+        <Key android:codes="103" android:keyLabel="g"/>
+        <Key android:codes="104" android:keyLabel="h"/>
+        <Key android:codes="106" android:keyLabel="j"/>
+        <Key android:codes="107" android:keyLabel="k"/>
+        <Key android:codes="108" android:keyLabel="l"  android:keyEdgeFlags="right"/>
+    </Row>
+    <!--        Ï W B Ñ N M        -->
+    <!--        Ï B Ñ N M L        -->
+    <!--        Ï B Ñ N M          -->
+    <Row>
+        <Key android:codes="-1,-102" android:keyIcon="@drawable/sym_keyboard_shift"
+            android:keyWidth="15%p" android:isModifier="true"
+            android:isSticky="true" android:keyEdgeFlags="left"/>
+        <!--<Key android:codes="239"  android:keyOutputText="@string/digraph_iWithDiaresis" android:keyLabel="ï" android:horizontalGap="10%p"/>-->
+        <Key android:codes="44" android:keyLabel=","/>
+        <Key android:codes="239" android:keyLabel="ï"/> <!--android:horizontalGap="10%p"/>-->
+        <Key android:codes="98" android:keyLabel="b"/>
+        <!--<Key android:codes="240" android:keyOutputText="@string/digraph_nWithTilde" android:keyLabel="ñ"/>-->
+        <Key android:codes="241" android:keyLabel="ñ"/>
+        <Key android:codes="110" android:keyLabel="n"/>
+        <Key android:codes="109" android:keyLabel="m"/>
+        <Key android:codes="63" android:keyLabel="\?"/>
+        <!--<Key android:codes="239" android:keyLabel="128"/>-->
+        <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete"
+            android:keyWidth="15%p" android:keyEdgeFlags="right" android:isRepeatable="true"/>
+            <!--android:horizontalGap="10%p"-->
+    </Row>
+    <!--    -->
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="-201" android:keyLabel="\?123" android:keyWidth="15%p" android:keyEdgeFlags="left"/>
+        <!--
+            android:codes: -101 is not a framework-defined key code but a key code that is
+            privately defined in com.mekads.kidak.KiDak.java
+        -->
+        <Key android:codes="-101" android:keyIcon="@drawable/sym_keyboard_uk"
+            android:keyWidth="10%p"/>
+        <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space"
+            android:keyWidth="50%p" android:isRepeatable="true"/>
+        <Key android:codes="46" android:keyLabel="."
+            android:keyWidth="10%p"/>
+        <!--<Key android:codes="46,44" android:keyLabel=". ,"
+            android:keyWidth="10%p"/>-->
+        <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return"
+            android:keyWidth="15%p" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>
